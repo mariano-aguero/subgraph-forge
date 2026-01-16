@@ -6,11 +6,32 @@ Subgraph Forge is a modern web tool that automates the creation of Subgraph code
 
 ---
 
+## 🚀 Deployment on Vercel
+
+The easiest way to deploy Subgraph Forge is to use the [Vercel Platform](https://vercel.com/new).
+
+### Step-by-Step Deployment
+
+1.  **Push your code** to a GitHub, GitLab, or Bitbucket repository.
+2.  **Import your project** into Vercel.
+3.  **Configure Environment Variables**:
+    In the Vercel dashboard, go to **Settings > Environment Variables** and add the following:
+    - `ANTHROPIC_API_KEY`: Your Anthropic API key.
+    - `ETHERSCAN_API_KEY`: (Optional) Your Etherscan V2 API key.
+    - `BASESCAN_API_KEY`: (Optional) Your Basescan API key.
+    - `POLYGONSCAN_API_KEY`: (Optional) Your Polygonscan API key.
+    - `OPTIMISM_ETHERSCAN_API_KEY`: (Optional) Your Optimism Etherscan API key.
+    - `ARBISCAN_API_KEY`: (Optional) Your Arbiscan API key.
+4.  **Deploy**: Vercel will automatically detect Next.js and build the project.
+
+---
+
 ## ✨ Features
 
 - **🚀 Instant Generation**: Enter a contract address and network to get a fully functional subgraph.
-- **🔍 Automated ABI Fetching**: Automatically retrieves the contract ABI and name from Etherscan and other explorers.
-- **🤖 Claude AI Integration**: Uses Claude 3.5 Sonnet to intelligently analyze events and generate optimized AssemblyScript mappings.
+- **🔍 Automated ABI Fetching**: Automatically retrieves the contract ABI and name from Etherscan V2 API.
+- **🤖 Claude AI Integration**: Uses Claude 3.5 Sonnet (or latest) to intelligently analyze events and generate optimized AssemblyScript mappings.
+- **🌓 Dark Mode Support**: Includes a toggle for light and dark themes for a better developer experience.
 - **📦 Ready-to-use ZIP**: Download all generated files (`schema.graphql`, `subgraph.yaml`, `mapping.ts`) in a single package.
 - **🌐 Multi-Network Support**: Support for Ethereum, Base, Polygon, Optimism, Arbitrum, and Sepolia.
 
@@ -22,8 +43,10 @@ Subgraph Forge is a modern web tool that automates the creation of Subgraph code
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Theme Management**: [next-themes](https://github.com/pacocoursey/next-themes)
 - **AI Engine**: [Anthropic Claude API](https://www.anthropic.com/api)
 - **Validation**: [Zod](https://zod.dev/) & [next-safe-action](https://next-safe-action.dev/)
+- **Code Quality**: [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
 
 ---
 
@@ -56,12 +79,16 @@ Subgraph Forge is a modern web tool that automates the creation of Subgraph code
    cp .env.example .env.local
    ```
 
-   Fill in your `ANTHROPIC_API_KEY` and any explorer API keys in `.env.local`.
+   Fill in your `ANTHROPIC_API_KEY` and any explorer API keys (like `ETHERSCAN_API_KEY`) in `.env.local`.
 
-4. **Run the development server**:
+4. **Available Scripts**:
 
    ```bash
-   pnpm dev
+   pnpm dev          # Run the development server
+   pnpm build        # Build the production application
+   pnpm lint         # Run ESLint to check for code issues
+   pnpm format       # Run Prettier to format the codebase
+   pnpm format:check # Check if the codebase follows formatting rules
    ```
 
 5. **Open the app**:
@@ -82,8 +109,7 @@ src/
 │       ├── components/ # Generator UI
 │       ├── actions.ts  # Server Actions (ABI fetch & AI gen)
 │       └── types.ts    # Shared types
-├── lib/                # Utilities and shared clients
-└── templates/          # AI development templates and guidelines
+└── lib/                # Utilities and shared clients
 ```
 
 ---
@@ -94,6 +120,7 @@ src/
 - **Input Validation**: All server actions are validated with Zod.
 - **English-Only**: Code, comments, and documentation are written in English for consistency.
 - **Formatting**: Enforced via Prettier.
+- **CI/CD**: Automated checks with GitHub Actions (Formatting, Linting, Type checking, and Build).
 
 ---
 
