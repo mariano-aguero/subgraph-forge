@@ -21,7 +21,9 @@ export function Footer() {
               GitHub
             </Link>
             <Link
-              href="/SUBGRAPH_DEPLOYMENT.md"
+              href="https://github.com/mariano-aguero/subgraph-forge/blob/main/SUBGRAPH_DEPLOYMENT.md"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
             >
               <FileText className="h-4 w-4" />
