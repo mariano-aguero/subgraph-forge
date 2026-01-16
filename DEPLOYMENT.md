@@ -28,16 +28,16 @@ Vercel will automatically detect that it is a **Next.js** project and that you a
 
 It is **essential** to configure the following environment variables in Vercel's "Environment Variables" section for the application to function correctly:
 
-| Variable                     | Description                                    | Required      |
-| :--------------------------- | :--------------------------------------------- | :------------ |
-| `ANTHROPIC_API_KEY`          | Your Anthropic API Key (Claude AI)             | Yes           |
-| `ETHERSCAN_API_KEY`          | Your Etherscan API Key (V2 API)                | No (Optional) |
-| `BASESCAN_API_KEY`           | Your Basescan API Key                          | No (Optional) |
-| `POLYGONSCAN_API_KEY`        | Your Polygonscan API Key                       | No (Optional) |
-| `OPTIMISM_ETHERSCAN_API_KEY` | Your Optimism Etherscan API Key                | No (Optional) |
-| `ARBISCAN_API_KEY`           | Your Arbiscan API Key                          | No (Optional) |
+| Variable                     | Description                        | Required      |
+| :--------------------------- | :--------------------------------- | :------------ |
+| `ANTHROPIC_API_KEY`          | Your Anthropic API Key (Claude AI) | Yes           |
+| `ETHERSCAN_API_KEY`          | Your Etherscan API Key (V2 API)    | No (Optional) |
+| `BASESCAN_API_KEY`           | Your Basescan API Key              | No (Optional) |
+| `POLYGONSCAN_API_KEY`        | Your Polygonscan API Key           | No (Optional) |
+| `OPTIMISM_ETHERSCAN_API_KEY` | Your Optimism Etherscan API Key    | No (Optional) |
+| `ARBISCAN_API_KEY`           | Your Arbiscan API Key              | No (Optional) |
 
-*Note: While explorer keys are optional, they are recommended to avoid rate limits when fetching ABIs.*
+_Note: While explorer keys are optional, they are recommended to avoid rate limits when fetching ABIs._
 
 ### 5. Deploy
 
