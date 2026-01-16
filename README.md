@@ -6,25 +6,7 @@
 
 Subgraph Forge is a modern web tool that automates the creation of Subgraph code (schema, manifest, and mappings) from a smart contract address. By leveraging Claude AI and blockchain explorers, it streamlines the development of data indexing layers for Web3 applications.
 
----
-
-## 🚀 Deployment on Vercel
-
-The easiest way to deploy Subgraph Forge is to use the [Vercel Platform](https://vercel.com/new).
-
-### Step-by-Step Deployment
-
-1.  **Push your code** to a GitHub, GitLab, or Bitbucket repository.
-2.  **Import your project** into Vercel.
-3.  **Configure Environment Variables**:
-    In the Vercel dashboard, go to **Settings > Environment Variables** and add the following:
-    - `ANTHROPIC_API_KEY`: Your Anthropic API key.
-    - `ETHERSCAN_API_KEY`: (Optional) Your Etherscan V2 API key.
-    - `BASESCAN_API_KEY`: (Optional) Your Basescan API key.
-    - `POLYGONSCAN_API_KEY`: (Optional) Your Polygonscan API key.
-    - `OPTIMISM_ETHERSCAN_API_KEY`: (Optional) Your Optimism Etherscan API key.
-    - `ARBISCAN_API_KEY`: (Optional) Your Arbiscan API key.
-4.  **Deploy**: Vercel will automatically detect Next.js and build the project.
+**Live Demo**: [https://subgraph-forge.vercel.app/](https://subgraph-forge.vercel.app/)
 
 ---
 
@@ -115,6 +97,10 @@ src/
 ```
 
 ---
+
+## 🚀 Deployment
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
 Check out our [Deployment Guide](DEPLOYMENT.md) for step-by-step instructions on how to integrate with Vercel and configure environment variables.
 
