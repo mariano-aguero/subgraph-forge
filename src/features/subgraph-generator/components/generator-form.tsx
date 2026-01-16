@@ -69,6 +69,7 @@ export function GeneratorForm() {
     zip.file("schema.graphql", generatedFiles["schema.graphql"])
     zip.file("subgraph.yaml", generatedFiles["subgraph.yaml"])
     zip.file("mapping.ts", generatedFiles["mapping.ts"])
+    zip.file(`${contractName || "Contract"}.json`, JSON.stringify(abi, null, 2))
 
     const content = await zip.generateAsync({ type: "blob" })
     const url = URL.createObjectURL(content)
@@ -177,10 +178,11 @@ export function GeneratorForm() {
           </div>
 
           <Tabs defaultValue="yaml" className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="yaml">subgraph.yaml</TabsTrigger>
               <TabsTrigger value="graphql">schema.graphql</TabsTrigger>
               <TabsTrigger value="mapping">mapping.ts</TabsTrigger>
+              <TabsTrigger value="abi">ABI.json</TabsTrigger>
             </TabsList>
             <TabsContent value="yaml">
               <pre className="p-4 bg-muted rounded-md overflow-auto max-h-[500px] text-sm">
@@ -195,6 +197,11 @@ export function GeneratorForm() {
             <TabsContent value="mapping">
               <pre className="p-4 bg-muted rounded-md overflow-auto max-h-[500px] text-sm">
                 {generatedFiles["mapping.ts"]}
+              </pre>
+            </TabsContent>
+            <TabsContent value="abi">
+              <pre className="p-4 bg-muted rounded-md overflow-auto max-h-[500px] text-sm">
+                {JSON.stringify(abi, null, 2)}
               </pre>
             </TabsContent>
           </Tabs>

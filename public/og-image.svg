@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a" />
+
+  <!-- Decorative Grid -->
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M100 0V630M200 0V630M300 0V630M400 0V630M500 0V630M600 0V630M700 0V630M800 0V630M900 0V630M1000 0V630M1100 0V630" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Main Content -->
+  <g transform="translate(600, 315)">
+    <!-- Forge Icon (Simplified Anvil/Hammer) -->
+    <g transform="translate(0, -80)">
+      <path d="M-60,40 L60,40 L80,10 L80,-10 L40,-10 L40,-30 L-40,-30 L-40,-10 L-80,-10 L-80,10 Z" fill="#38bdf8" />
+      <rect x="-20" y="40" width="40" height="20" fill="#38bdf8" />
+      <path d="M-40,60 L40,60 L50,70 L-50,70 Z" fill="#38bdf8" />
+      <!-- Hammer -->
+      <g transform="rotate(-30, 40, -40)">
+        <rect x="30" y="-70" width="20" height="60" fill="#94a3b8" />
+        <rect x="15" y="-90" width="50" height="25" rx="4" fill="#cbd5e1" />
+      </g>
+    </g>
+
+    <!-- Text -->
+    <text text-anchor="middle" y="80" font-family="Arial, sans-serif" font-size="84" font-weight="900" fill="#f8fafc">
+      Subgraph Forge
+    </text>
+    <text text-anchor="middle" y="150" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#94a3b8">
+      AI-Powered Subgraph Generator
+    </text>
+  </g>
+
+  <!-- Accent Line -->
+  <rect x="400" y="500" width="400" height="4" rx="2" fill="#38bdf8" />
+</svg>

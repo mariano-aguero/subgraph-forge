@@ -116,6 +116,12 @@ Please provide the content for the following 3 files in a JSON format:
 2. subgraph.yaml (Manifest with dataSources, source address, abi, and eventHandlers)
 3. mapping.ts (AssemblyScript mappings for each event handler)
 
+Specific instructions for subgraph.yaml:
+- The network field MUST be exactly "${network}".
+- The name of the ABI in the source and mapping sections MUST be "${contractName}".
+- The file path for the ABI MUST be "./${contractName}.json".
+- Include a "startBlock" field under the source section (use 0 as a placeholder if you don't know the exact block, but add a comment that the user should update it).
+
 The output must be strictly a JSON object with these keys: "schema.graphql", "subgraph.yaml", "mapping.ts".
 Do not include any explanation, only the JSON.
 `

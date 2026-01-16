@@ -17,6 +17,7 @@ Subgraph Forge is a modern web tool that automates the creation of Subgraph code
 - **🤖 Claude AI Integration**: Uses Claude 3.5 Sonnet (or latest) to intelligently analyze events and generate optimized AssemblyScript mappings.
 - **🌓 Dark Mode Support**: Includes a toggle for light and dark themes for a better developer experience.
 - **📦 Ready-to-use ZIP**: Download all generated files (`schema.graphql`, `subgraph.yaml`, `mapping.ts`) in a single package.
+- **🚀 Easy Deployment**: Follow our [Deployment Guide](SUBGRAPH_DEPLOYMENT.md) to upload your code to The Graph.
 - **🌐 Multi-Network Support**: Support for Ethereum, Base, Polygon, Optimism, Arbitrum, and Sepolia.
 
 ---
@@ -102,7 +103,8 @@ src/
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
-Check out our [Deployment Guide](DEPLOYMENT.md) for step-by-step instructions on how to integrate with Vercel and configure environment variables.
+- **Vercel Guide**: Check out our [Vercel Deployment Guide](DEPLOYMENT.md) for step-by-step instructions.
+- **Subgraph Guide**: Check out our [Subgraph Deployment Guide](SUBGRAPH_DEPLOYMENT.md) to learn how to deploy the generated code to The Graph.
 
 ## 🛡️ Security & Standards
 
