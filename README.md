@@ -1,5 +1,7 @@
 # 🛠️ Subgraph Forge
 
+[![Deploy with Vercel](https://vercel.com/button)](https://subgraph-forge.vercel.app/)
+
 > **AI-Powered Subgraph Generator for The Graph Protocol**
 
 Subgraph Forge is a modern web tool that automates the creation of Subgraph code (schema, manifest, and mappings) from a smart contract address. By leveraging Claude AI and blockchain explorers, it streamlines the development of data indexing layers for Web3 applications.
@@ -113,6 +115,8 @@ src/
 ```
 
 ---
+
+Check out our [Deployment Guide](DEPLOYMENT.md) for step-by-step instructions on how to integrate with Vercel and configure environment variables.
 
 ## 🛡️ Security & Standards
 
