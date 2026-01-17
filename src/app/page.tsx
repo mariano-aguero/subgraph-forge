@@ -3,7 +3,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background py-12">
+    <div className="bg-background py-12">
       <div className="container mx-auto px-4">
         <div className="flex justify-end mb-4">
           <ThemeToggle />
@@ -20,6 +20,6 @@ export default function Home() {
 
         <GeneratorForm />
       </div>
-    </main>
+    </div>
   )
 }
